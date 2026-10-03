@@ -58,6 +58,16 @@ function mediaAliasPlugin(): Plugin {
             return fs.createReadStream(p).pipe(res);
           }
         }
+        if (url === '/project.zip' || url === '/download-zip' || url === '/texas-teazed.zip') {
+          const zipPath = '/tmp/texas-teazed-complete.zip';
+          if (fs.existsSync(zipPath)) {
+            const stat = fs.statSync(zipPath);
+            res.setHeader('Content-Type', 'application/zip');
+            res.setHeader('Content-Disposition', 'attachment; filename="texas-teazed-code-complete.zip"');
+            res.setHeader('Content-Length', stat.size);
+            return fs.createReadStream(zipPath).pipe(res);
+          }
+        }
         next();
       });
     },
@@ -84,21 +94,11 @@ function mediaAliasPlugin(): Plugin {
       }
 
       if (imgDir) {
-        copyDir(imgDir, [
-          path.join(distDir, 'images'),
-          path.join(distDir, 'image'),
-          path.join(distDir, 'public image'),
-          path.join(distDir, 'Public image'),
-        ]);
+        copyDir(imgDir, [path.join(distDir, 'images')]);
       }
 
       if (vidDir) {
-        copyDir(vidDir, [
-          path.join(distDir, 'videos'),
-          path.join(distDir, 'video'),
-          path.join(distDir, 'public video'),
-          path.join(distDir, 'Public video'),
-        ]);
+        copyDir(vidDir, [path.join(distDir, 'videos')]);
       }
 
       // Copy robots.txt and sitemap.xml to dist
