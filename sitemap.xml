@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://texasteazed.com/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://texasteazed.com/images/dimensional-color.jpg</image:loc>
+      <image:title>Texas Teazed Hair Salon League City TX - Dimensional Color and Balayage</image:title>
+      <image:caption>Lived-in luxury balayage and blonde transformations at Texas Teazed Hair Salon in League City, Texas.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://texasteazed.com/images/balyage.jpg</image:loc>
+      <image:title>Lived-In Balayage Texas Teazed</image:title>
+      <image:caption>Sun-kissed hand-painted balayage by Master Colorists in Texas.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://texasteazed.com/images/foilayage.png</image:loc>
+      <image:title>Precision Foilayage Hair Service</image:title>
+      <image:caption>Maximum blended brightness combining balayage and foils.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://texasteazed.com/images/precision-cuts.jpg</image:loc>
+      <image:title>Precision Haircuts League City TX</image:title>
+      <image:caption>Architectural shapes and soft lived-in layers for men and women.</image:caption>
+    </image:image>
+  </url>
+</urlset>

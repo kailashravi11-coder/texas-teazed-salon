@@ -23,7 +23,7 @@ export function Mission() {
         >
           <motion.video
             style={{ y }}
-            src="/media/southern-charms.mp4"
+            src="/videos/southern-charms.mp4"
             autoPlay
             loop
             muted

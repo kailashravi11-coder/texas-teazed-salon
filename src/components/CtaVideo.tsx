@@ -14,7 +14,7 @@ export function CtaVideo() {
         loop
         muted
         playsInline
-        src="/media/CTABOOKING.mp4"
+        src="/videos/CTABOOKING.mp4"
         className="w-full h-auto block pointer-events-none"
       />
       

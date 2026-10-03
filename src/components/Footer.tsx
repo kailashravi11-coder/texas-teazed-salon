@@ -380,7 +380,7 @@ export function Footer() {
             <div className="mb-10 sm:mb-16 md:mb-20">
               <div className="mb-4 sm:mb-6">
                 <img 
-                  src="/media/images/transparent.png" 
+                  src="/images/transparent.png" 
                   alt="Texas Teazed Hair Salon" 
                   className="h-28 sm:h-36 md:h-48 lg:h-64 w-auto max-w-full object-contain origin-left"
                 />

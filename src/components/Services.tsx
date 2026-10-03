@@ -6,17 +6,17 @@ const services = [
   {
     title: "Precision cuts",
     desc: "Architectural shapes and soft, lived-in layers designed to grow out beautifully and effortlessly.",
-    img: "/media/images/precision-cuts.jpg"
+    img: "/images/precision-cuts.jpg"
   },
   {
     title: "Dimensional color",
     desc: "Bespoke balayage, foilayage, and all-over color tailored to your unique skin tone and lifestyle.",
-    img: "/media/images/dimensional-color.jpg"
+    img: "/images/dimensional-color.jpg"
   },
   {
     title: "Luxury Blowouts",
     desc: "Revitalizing treatments and professional styling for a flawless, voluminous, and polished finish.",
-    img: "/media/images/luxury-blowouts.jpg"
+    img: "/images/luxury-blowouts.jpg"
   }
 ];
 

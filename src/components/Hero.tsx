@@ -36,7 +36,7 @@ export function Hero() {
           muted
           playsInline
           preload="auto"
-          src="/media/hero.mp4"
+          src="/videos/hero.mp4"
           className="hidden md:block w-full h-auto pointer-events-none select-none"
         />
 
@@ -47,12 +47,12 @@ export function Hero() {
           muted
           playsInline
           preload="auto"
-          src="/media/hero-mobile.mp4"
+          src="/videos/hero-mobile.mp4"
           onError={(e) => {
             // Smooth fallback to hero.mp4 if hero-mobile.mp4 fails
             const target = e.currentTarget;
-            if (target.src && !target.src.endsWith('/media/hero.mp4')) {
-              target.src = '/media/hero.mp4';
+            if (target.src && !target.src.endsWith('/videos/hero.mp4')) {
+              target.src = '/videos/hero.mp4';
             }
           }}
           className="block md:hidden w-full aspect-[9/16] object-cover pointer-events-none select-none"

@@ -18,7 +18,7 @@ export function TonersAndRefreshers() {
           muted
           playsInline
           preload="auto"
-          src="/media/Toners & refreshers.mp4"
+          src="/videos/Toners & refreshers.mp4"
           className="hidden md:block w-full h-auto"
         />
 
@@ -29,11 +29,11 @@ export function TonersAndRefreshers() {
           muted
           playsInline
           preload="auto"
-          src="/media/toners-mobile.mp4"
+          src="/videos/toners-mobile.mp4"
           onError={(e) => {
             const target = e.currentTarget;
-            if (!target.src.endsWith('/media/Toners & refreshers.mp4')) {
-              target.src = '/media/Toners & refreshers.mp4';
+            if (!target.src.endsWith('/videos/Toners & refreshers.mp4')) {
+              target.src = '/videos/Toners & refreshers.mp4';
             }
           }}
           className="block md:hidden w-full aspect-[9/16] object-cover"
@@ -58,7 +58,7 @@ export function TonersAndRefreshers() {
                 <motion.img 
                   whileHover={{ scale: 1.06 }}
                   transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-                  src="/media/images/gloss-treatment.png" 
+                  src="/images/gloss-treatment.png" 
                   alt="Gloss Treatments" 
                   className="w-full aspect-[4/5] object-cover origin-center"
                 />
@@ -91,7 +91,7 @@ export function TonersAndRefreshers() {
                 <motion.img 
                   whileHover={{ scale: 1.06 }}
                   transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-                  src="/media/images/tone-correction.png" 
+                  src="/images/tone-correction.png" 
                   alt="Tone Correction" 
                   className="w-full aspect-[4/5] object-cover origin-center"
                 />
@@ -124,7 +124,7 @@ export function TonersAndRefreshers() {
                 <motion.img 
                   whileHover={{ scale: 1.06 }}
                   transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-                  src="/media/images/maintenance.png" 
+                  src="/images/maintenance.png" 
                   alt="Maintenance" 
                   className="w-full aspect-[4/5] object-cover origin-center"
                 />

@@ -1,0 +1,28 @@
+# Texas Teazed Hair Salon - Robots.txt
+# Optimized for Web, AI Search Engines, and Geographic Crawlers
+
+User-agent: *
+Allow: /
+Disallow: /*?portal=leads
+Disallow: /*#staff-portal
+
+# AI / Answer Engine Crawlers (AEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://texasteazed.com/sitemap.xml

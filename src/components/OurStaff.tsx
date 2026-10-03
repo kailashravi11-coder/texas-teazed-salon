@@ -15,43 +15,43 @@ const staff: StaffItem[] = [
   {
     name: "Antoinette (Toni) Johnson",
     role: "Master Colorist",
-    image: "/media/images/Antoinette (Toni) Johnson.png",
-    video: "/media/Antoinette (Toni) Johnson.mp4",
+    image: "/images/Antoinette (Toni) Johnson.png",
+    video: "/videos/Antoinette (Toni) Johnson.mp4",
     bio: "Toni is a passionate Master Colorist with over a decade of experience crafting customized, vibrant looks. She specializes in lived-in color, transformative blonding, and dimensional styling to ensure every client leaves feeling confident and radiant. When she's not behind the chair, she loves staying updated on the latest industry trends."
   },
   {
     name: "Ashley Cox",
     role: "Lead Stylist",
-    image: "/media/images/ashley cox.jpg",
-    video: "/media/Ashley Cox.mp4",
+    image: "/images/ashley cox.jpg",
+    video: "/videos/Ashley Cox.mp4",
     bio: "Meet Ashley, our resident 'Jack of All Trades!' She's been doing hair for 18 years and is a former Paul Mitchell educator. She especially loves Color Corrections, Blonding, Balayage and Hair Extensions. After recently moving back to League City, she's ready to slay some Galveston Bay hair! Book with her today and let her TRANSFORM you!"
   },
   {
     name: "Evangeline (Vangie) Schuler",
     role: "Master Hairstylist",
-    image: "/media/images/Evangeline (Vangie) Schuler.png",
-    video: "/media/Evangeline (Vangie) Schuler.mp4",
+    image: "/images/Evangeline (Vangie) Schuler.png",
+    video: "/videos/Evangeline (Vangie) Schuler.mp4",
     bio: "Hello my name is Vangie. I am a Master Hairstylist specializing in Haircolor, haircutting, mens cut, kids cut. I also love to do updos, wedding, prom, and special occasion styling, I am certified in Brazillian Blowout, and other services. I joined working in the industry for several years I was graduated in Paul Mitchell the School Clear Lake. I love what I Do. You can view my work on INSTAGRAM and FACEBOOK : @vanitybyvangie I hope to see you soon in my chair."
   },
   {
     name: "Kastin Wilde",
     role: "Cutting Specialist",
-    image: "/media/images/Kastin Wilde.png",
-    video: "/media/Kastin Wilde.mp4",
+    image: "/images/Kastin Wilde.png",
+    video: "/videos/Kastin Wilde.mp4",
     bio: "Originating from Santa Fe, Kastin is a cutting specialist. From Men’s fades & trims, to Women’s long-layered haircuts—she’s your girl (bring the whole family!) She believes what separates her from others is that she’s always on the new trends and strives to make you comfortable in her chair. Building genuine connections is essential and Kastin will make sure you look amazing! Book with her today!"
   },
   {
     name: "Katie Zimmerman",
     role: "Senior Stylist",
-    image: "/media/images/katie-zimmerman.png",
-    video: "/media/Katie Zimmerman.mp4",
+    image: "/images/katie-zimmerman.png",
+    video: "/videos/Katie Zimmerman.mp4",
     bio: "Katie is an accomplished hairstylist renowned for her expertise in vibrant hair colors, blonding techniques, treatments, and precision haircuts. She excels in crafting personalized hairstyles that incorporate vivid colors and seamless techniques, ensuring a unique and tailored look for each client. Katie possesses the ability to effortlessly transform your hair with bold or subtle hues, leaving you with a stunning and distinct style. In her free time Katie enjoys spending quality time with her son and attending as many concerts as possible."
   },
   {
     name: "Linsie Reames",
     role: "Blonding Expert",
-    image: "/media/images/Linsie Reames.png",
-    video: "/media/Linsie Reames.mp4",
+    image: "/images/Linsie Reames.png",
+    video: "/videos/Linsie Reames.mp4",
     bio: "Linsie brings experience with both men and women’s cuts, colors and shaves. She specializes in Brazilian blowouts, blonde shades, and prides herself with hair styles that fit the individual person. She desperately wants everyone in her chair to feel special and leave looking their best! In her free time she loves doing anything with her son. He loves fishing, going to the beach, she enjoys cooking. Book with her today!"
   }
 ];
@@ -232,7 +232,7 @@ export function OurStaff() {
           muted
           playsInline
           preload="auto"
-          src="/media/salon-staff.mp4"
+          src="/videos/salon-staff.mp4"
           className="hidden md:block w-full h-auto"
         />
 
@@ -243,11 +243,11 @@ export function OurStaff() {
           muted
           playsInline
           preload="auto"
-          src="/media/staff-mobile.mp4"
+          src="/videos/staff-mobile.mp4"
           onError={(e) => {
             const target = e.currentTarget;
-            if (!target.src.endsWith('/media/salon-staff.mp4')) {
-              target.src = '/media/salon-staff.mp4';
+            if (!target.src.endsWith('/videos/salon-staff.mp4')) {
+              target.src = '/videos/salon-staff.mp4';
             }
           }}
           className="block md:hidden w-full aspect-[9/16] object-cover"

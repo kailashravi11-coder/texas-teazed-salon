@@ -17,7 +17,7 @@ interface InstagramPost {
 const instagramPosts: InstagramPost[] = [
   {
     id: 'post-1',
-    img: '/media/images/balyage.jpg',
+    img: '/images/balyage.jpg',
     category: 'color',
     caption: 'Sun-kissed dimensional balayage with seamless root melt. Soft waves to catch the Texas golden hour ✨',
     likes: 184,
@@ -27,7 +27,7 @@ const instagramPosts: InstagramPost[] = [
   },
   {
     id: 'post-2',
-    img: '/media/images/dimensional-color.jpg',
+    img: '/images/dimensional-color.jpg',
     category: 'color',
     caption: 'Rich espresso with caramel ribbon highlights. Healthy shine with custom gloss toner.',
     likes: 212,
@@ -37,7 +37,7 @@ const instagramPosts: InstagramPost[] = [
   },
   {
     id: 'post-3',
-    img: '/media/images/precision-cuts.jpg',
+    img: '/images/precision-cuts.jpg',
     category: 'cuts',
     caption: 'Architectural precision cut with effortless lived-in texture. Easy to style every morning!',
     likes: 147,
@@ -47,7 +47,7 @@ const instagramPosts: InstagramPost[] = [
   },
   {
     id: 'post-4',
-    img: '/media/images/foilayage.png',
+    img: '/images/foilayage.png',
     category: 'transformations',
     caption: 'High-contrast foilayage blend for maximum brightness with zero harsh line of demarcation 🌾',
     likes: 263,
@@ -57,7 +57,7 @@ const instagramPosts: InstagramPost[] = [
   },
   {
     id: 'post-5',
-    img: '/media/images/luxury-blowouts.jpg',
+    img: '/images/luxury-blowouts.jpg',
     category: 'cuts',
     caption: 'The signature Teazed Luxe Blowout. Big Texas volume, silky finish, and hold for the whole weekend 💫',
     likes: 195,
@@ -67,7 +67,7 @@ const instagramPosts: InstagramPost[] = [
   },
   {
     id: 'post-6',
-    img: '/media/images/tone-correction.png',
+    img: '/images/tone-correction.png',
     category: 'transformations',
     caption: 'Brass to cool honey beige tone correction. Deep conditioning mask to revive moisture and strength.',
     likes: 238,
@@ -77,7 +77,7 @@ const instagramPosts: InstagramPost[] = [
   },
   {
     id: 'post-7',
-    img: '/media/images/allovercolor.png',
+    img: '/images/allovercolor.png',
     category: 'color',
     caption: 'Deep velvet auburn all-over gloss. High-definition shine with non-damaging organic toner.',
     likes: 172,
@@ -87,7 +87,7 @@ const instagramPosts: InstagramPost[] = [
   },
   {
     id: 'post-8',
-    img: '/media/images/gloss-treatment.png',
+    img: '/images/gloss-treatment.png',
     category: 'cuts',
     caption: 'Post-treatment glass hair shine! Infused with botanical bond-builders for lasting softness.',
     likes: 165,

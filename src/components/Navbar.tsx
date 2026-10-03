@@ -20,13 +20,13 @@ export function Navbar() {
         <a href="/" className="block">
           {/* Prominent mobile logo */}
           <img 
-            src="/media/images/logo-tight.png?v=2" 
+            src="/images/logo-tight.png?v=2" 
             alt="Texas Teazed Hair Salon" 
             className="h-14 sm:h-16 md:hidden w-auto object-contain transition-transform"
           />
           {/* Desktop logo */}
           <img 
-            src="/media/images/transparent.png" 
+            src="/images/transparent.png" 
             alt="Texas Teazed Hair Salon" 
             className="hidden md:block md:h-48 lg:h-56 w-auto object-contain scale-110 origin-top-left md:-translate-y-12"
           />

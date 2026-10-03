@@ -14,7 +14,7 @@ export function VideoDivider() {
         loop
         muted
         playsInline
-        src="/media/service.mp4"
+        src="/videos/service.mp4"
         className="w-full h-auto block"
       />
     </motion.section>

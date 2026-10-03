@@ -20,7 +20,7 @@ export function GalleryVideo() {
         loop
         muted
         playsInline
-        src="/media/gallery-video.mp4"
+        src="/videos/gallery-video.mp4"
         className="w-full h-auto block"
       />
     </motion.section>
