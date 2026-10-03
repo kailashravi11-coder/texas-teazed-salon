@@ -1,0 +1,8 @@
+{
+  "name": "Texas Teazed Hair Salon",
+  "description": "Texas Teazed Hair Salon in League City, TX – Premier salon specializing in luxury balayage, dimensional lived-in color, precision haircuts, Brazilian blowouts & extensions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
