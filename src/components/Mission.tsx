@@ -1,35 +1,35 @@
-import { motion, useScroll, useTransform } from 'motion/react';
-import { useRef } from 'react';
+import { motion } from 'motion/react';
 import { AnimatedText } from './AnimatedText';
 
 export function Mission() {
-  const containerRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"]
-  });
-  
-  const y = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
-
   return (
-    <section ref={containerRef} id="mission" className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 md:px-12 lg:px-24 bg-beige flex flex-col lg:flex-row gap-10 md:gap-16 items-center overflow-hidden">
+    <section id="mission" className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 md:px-12 lg:px-24 bg-beige flex flex-col lg:flex-row gap-10 md:gap-16 items-center overflow-hidden">
       <div className="flex-1 w-full relative">
         <motion.div
-          initial={{ opacity: 0, clipPath: 'inset(100% 0 0 0)' }}
-          whileInView={{ opacity: 1, clipPath: 'inset(0% 0 0 0)' }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="aspect-[4/5] overflow-hidden rounded-2xl relative"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+          className="aspect-[4/5] overflow-hidden rounded-2xl relative bg-forest/5"
         >
-          <motion.video
-            style={{ y }}
-            src="/videos/southern-charms.mp4"
+          <video
             autoPlay
             loop
             muted
             playsInline
-            className="w-full h-full object-cover scale-110"
-          />
+            preload="auto"
+            ref={(video) => {
+              if (video) {
+                video.muted = true;
+                video.defaultMuted = true;
+                video.play().catch(() => {});
+              }
+            }}
+            src="/videos/southern-charms.mp4"
+            className="w-full h-full object-cover"
+          >
+            <source src="/videos/southern-charms.mp4" type="video/mp4" />
+          </video>
           <div className="absolute inset-0 bg-forest/10 mix-blend-overlay"></div>
           
           <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none select-none">

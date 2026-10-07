@@ -11,7 +11,7 @@ export function TonersAndRefreshers() {
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
         className="w-full relative leading-[0] flex bg-forest"
       >
-        {/* Desktop & Tablet Video (16:9 Original - No Changes) */}
+        {/* Desktop & Tablet Video (16:9 Original) */}
         <video
           autoPlay
           loop
@@ -20,7 +20,9 @@ export function TonersAndRefreshers() {
           preload="auto"
           src="/videos/Toners & refreshers.mp4"
           className="hidden md:block w-full h-auto"
-        />
+        >
+          <source src="/videos/Toners & refreshers.mp4" type="video/mp4" />
+        </video>
 
         {/* Mobile-Only Vertical Video (9:16 toners-mobile.mp4) */}
         <video
@@ -32,12 +34,17 @@ export function TonersAndRefreshers() {
           src="/videos/toners-mobile.mp4"
           onError={(e) => {
             const target = e.currentTarget;
-            if (!target.src.endsWith('/videos/Toners & refreshers.mp4')) {
+            if (!target.src.includes('toners-and-refreshers')) {
+              target.src = '/videos/toners-and-refreshers.mp4';
+            } else if (!target.src.includes('Toners')) {
               target.src = '/videos/Toners & refreshers.mp4';
             }
           }}
           className="block md:hidden w-full aspect-[9/16] object-cover"
-        />
+        >
+          <source src="/videos/toners-mobile.mp4" type="video/mp4" />
+          <source src="/videos/toners-and-refreshers.mp4" type="video/mp4" />
+        </video>
       </motion.section>
 
       <section className="py-16 sm:py-20 md:py-28 lg:py-32 px-4 sm:px-6 md:px-8 lg:px-16 bg-beige text-forest">

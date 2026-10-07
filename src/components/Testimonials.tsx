@@ -36,7 +36,7 @@ export function Testimonials() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
             className="flex gap-1 text-terracotta mb-4 sm:mb-6"
           >
             {[...Array(5)].map((_, i) => <Star key={i} fill="currentColor" className="w-4 h-4 sm:w-5 sm:h-5" />)}
@@ -45,7 +45,7 @@ export function Testimonials() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.4 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             className="text-forest/70 uppercase tracking-widest text-xs sm:text-sm font-medium"
           >
             Rated 4.9/5 by our clients
@@ -56,11 +56,11 @@ export function Testimonials() {
           {reviews.map((review, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, x: 40 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               whileHover={{ y: -6, transition: { type: "spring", stiffness: 350, damping: 20 } }}
               viewport={{ once: true }}
-              transition={{ duration: 1, delay: i * 0.2, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.8, delay: i * 0.15, ease: [0.16, 1, 0.3, 1] }}
               className="bg-[#f0ebe1] p-5 sm:p-7 md:p-8 lg:p-10 rounded-2xl sm:rounded-3xl border border-[#e5dfd5] hover:shadow-2xl transition-shadow duration-500 cursor-pointer min-w-0"
             >
               <div className="text-terracotta mb-4 sm:mb-6 opacity-50">

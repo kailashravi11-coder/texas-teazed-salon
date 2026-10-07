@@ -1,0 +1,23 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/videos/Toners*"
+  to = "/videos/toners-and-refreshers.mp4"
+  status = 200
+
+[[redirects]]
+  from = "/image/*"
+  to = "/images/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/video/*"
+  to = "/videos/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

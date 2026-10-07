@@ -68,6 +68,23 @@ function mediaAliasPlugin(): Plugin {
             return fs.createReadStream(zipPath).pipe(res);
           }
         }
+        if (url === '/TEXAS_TEAZED_CRM_COMPLETE_CODE.pdf' || url === '/crm-code.pdf') {
+          const pdfPath = path.resolve(__dirname, 'public/TEXAS_TEAZED_CRM_COMPLETE_CODE.pdf');
+          if (fs.existsSync(pdfPath)) {
+            const stat = fs.statSync(pdfPath);
+            res.setHeader('Content-Type', 'application/pdf');
+            res.setHeader('Content-Disposition', 'attachment; filename="TEXAS_TEAZED_CRM_COMPLETE_CODE.pdf"');
+            res.setHeader('Content-Length', stat.size);
+            return fs.createReadStream(pdfPath).pipe(res);
+          }
+        }
+        if (url === '/CRM_SOURCE_CODE.html' || url === '/crm-code.html') {
+          const htmlPath = path.resolve(__dirname, 'public/CRM_SOURCE_CODE.html');
+          if (fs.existsSync(htmlPath)) {
+            res.setHeader('Content-Type', 'text/html; charset=utf-8');
+            return fs.createReadStream(htmlPath).pipe(res);
+          }
+        }
         next();
       });
     },
@@ -111,8 +128,19 @@ function mediaAliasPlugin(): Plugin {
         fs.copyFileSync(sitemapSrc, path.join(distDir, 'sitemap.xml'));
       }
 
+      // Copy CRM PDF and HTML to dist
+      const pdfSrc = path.resolve(__dirname, 'public/TEXAS_TEAZED_CRM_COMPLETE_CODE.pdf');
+      if (fs.existsSync(pdfSrc)) {
+        fs.copyFileSync(pdfSrc, path.join(distDir, 'TEXAS_TEAZED_CRM_COMPLETE_CODE.pdf'));
+      }
+      const htmlSrc = path.resolve(__dirname, 'public/CRM_SOURCE_CODE.html');
+      if (fs.existsSync(htmlSrc)) {
+        fs.copyFileSync(htmlSrc, path.join(distDir, 'CRM_SOURCE_CODE.html'));
+      }
+
       // Netlify _redirects
       const redirectsContent = `# Netlify redirects for clean SPA & media aliases
+/videos/Toners*     /videos/toners-and-refreshers.mp4 200
 /image/*            /images/:splat          200
 /video/*            /videos/:splat          200
 /public%20image/*   /images/:splat          200

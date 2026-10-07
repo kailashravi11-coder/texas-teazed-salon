@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/videos/Toners:path*", "destination": "/videos/toners-and-refreshers.mp4" },
+    { "source": "/((?!api/|_next/|_static/|[\\w-]+\\.\\w+).*)$", "destination": "/index.html" }
+  ]
+}
